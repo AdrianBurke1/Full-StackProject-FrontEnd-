@@ -1,0 +1,34 @@
+/* Header.css */
+
+.header {
+    background-color: #1877f2; /* Facebook's blue color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Optional: Add a Facebook-like logo */
+  .header .logo {
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  
+  /* Optional: Style links or buttons inside the header */
+  .header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
