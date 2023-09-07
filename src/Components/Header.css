@@ -15,10 +15,11 @@
   }
   
   /* Optional: Add a Facebook-like logo */
-  .header .logo {
+  .logo {
     font-weight: bold;
     font-size: 28px;
-    margin-right: 10px;
+    margin-right: 1000px;
+    margin-left: 10px;
   }
   
   /* Optional: Style links or buttons inside the header */
