@@ -1,0 +1,15 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This will make the login container take up the entire viewport height */
+  }
+  
+  .login-form {
+    text-align: center; /* Center the form elements */
+  }
+  
+  /* Add other styles as needed */
+  

@@ -1,0 +1,81 @@
+/* Profile.css */
+
+.profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture-container {
+    width: 80px; /* Adjust the size of the profile picture as needed */
+    height: 80px; /* Adjust the size of the profile picture as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Make the profile image round */
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+  }
+  
+  .profile-picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .post-section {
+    margin-top: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .user-post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .post-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .post-actions button:not(:last-child) {
+    margin-right: 10px;
+  }
+  

@@ -1,42 +1,26 @@
-import React, { useState } from 'react';
-import './Header.css';
-import Home from './Home';
-import Profile from './Profile';
-import Notifications from './Notifications';
-import Messages from './Messages';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css'; // Import your CSS file
+
+// Import the image
+import headerImage from '/Users/adrianburke/Desktop/Full-StackProject-FrontEnd-/src/Tech_Space-removebg-preview.png';
 
 function Header() {
-  const [selectedPage, setSelectedPage] = useState('Home');
-
-  const renderPage = () => {
-    switch (selectedPage) {
-      case 'Home':
-        return <Home />;
-      case 'Profile':
-        return <Profile />;
-      case 'Notifications':
-        return <Notifications />;
-      case 'Messages':
-        return <Messages />;
-      default:
-        return <Home />;
-    }
-  };
-
   return (
     <div className="header">
-      <div className="logo">Tech Space</div>
-      <div className="title">
-      </div>
+      <img
+        className="header-image"
+        src={headerImage} // Use the imported image as the source
+        alt="Tech Space Logo"
+      />
+      <div className="title"></div>
       <div className="links">
-        <a href="#" onClick={() => setSelectedPage('Home')}>Home</a>
-        <a href="#" onClick={() => setSelectedPage('Profile')}>Profile</a>
-        <a href="#" onClick={() => setSelectedPage('Notifications')}>Notifications</a>
-        <a href="#" onClick={() => setSelectedPage('Messages')}>Messages</a>
+        <Link to="/">Home</Link>
+        <Link to="/profile">Profile</Link>
+        <Link to="/login">Log In</Link> {/* Add the Login link */}
+        {/* Add other navigation links */}
       </div>
-      <div className="page-content">
-        {renderPage()}
-      </div>
+      <div className="page-content"></div>
     </div>
   );
 }

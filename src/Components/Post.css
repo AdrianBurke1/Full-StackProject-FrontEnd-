@@ -1,0 +1,71 @@
+/* Post.css */
+.post {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+  
+  .post pre {
+    background-color: #f3f4f6;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    overflow-x: auto;
+  }
+  
+  .post .actions {
+    margin-top: 12px;
+  }
+  
+  .post button {
+    background-color: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .post .comments {
+    margin-top: 12px;
+  }
+  
+  .post .comments h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .post .comments ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post .comments li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .post .comments input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  
+  .post .comments input[type="text"]:focus {
+    outline: none;
+    border-color: #0366d6;
+  }
+  

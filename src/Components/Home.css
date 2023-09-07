@@ -1,0 +1,71 @@
+/* Home.css */
+.home {
+    background-color: #f6f8fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 0; /* Reset padding */
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #24292e; /* GitHub's header background color */
+    color: #fff;
+    margin-bottom: 10px; /* Add margin to separate the header from content */
+}
+
+.github-logo {
+    width: 150px; /* Increase the logo size as needed */
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-content {
+    /* Add styles for your main content here */
+    padding: 1rem; /* Adjust padding for better spacing */
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home.css */
+.home {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure the background covers the full viewport height */
+    overflow: hidden; /* Hide any content overflowing the viewport */
+  
+    /* Animation styles */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+                      linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+                      linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+                      linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+                      url('/Users/adrianburke/Desktop/Full-StackProject-FrontEnd-/Blue Gradient Technology Zoom Virtual Background.png'); /* Add the background image URL here */
+    background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%, cover; /* Adjust the size and cover */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background */
+  
+    animation: codingBackground 3s linear infinite;
+  
+    @keyframes codingBackground {
+      0% {
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+      }
+      100% {
+        background-position: 100% 0, 100% 100%, 0 0, 100% 100%;
+      }
+    }
+  }
