@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Posts() {
+  const [post, setPost] = useEffect
   const [posts, setPosts] = useState([
     {
       id: 1,
@@ -17,6 +18,7 @@ function Posts() {
       likes: 0,
     },
   ]);
+
 
   const addComment = (postId, comment) => {
     const updatedPosts = posts.map((post) => {

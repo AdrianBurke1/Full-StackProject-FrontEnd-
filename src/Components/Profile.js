@@ -19,6 +19,13 @@ function Profile() {
     }
   };
 
+  // Function to handle post deletion
+  const handleDeletePost = (index) => {
+    const updatedPosts = [...posts];
+    updatedPosts.splice(index, 1);
+    setPosts(updatedPosts);
+  };
+
   return (
     <div className="profile-page">
       <div className="profile-header">
@@ -56,8 +63,9 @@ function Profile() {
             <div className="post-actions">
               <button>Like</button>
               <button>Comment</button>
-              <button>Share</button>
+              <button onClick={() => handleDeletePost(posts.length - 1)}>Delete</button>
             </div>
+    
           </div>
         )}
 
@@ -69,7 +77,7 @@ function Profile() {
             <div className="post-actions">
               <button>Like</button>
               <button>Comment</button>
-              <button>Share</button>
+              <button onClick={() => handleDeletePost(index)}>Delete</button>
             </div>
           </div>
         ))}
