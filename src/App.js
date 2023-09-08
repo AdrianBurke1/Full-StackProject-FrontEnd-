@@ -1,5 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Import Routes
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes
 import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
@@ -7,6 +8,20 @@ import Profile from './Components/Profile';
 import Login from './Components/Login'; // Import the Login component
 
 function App() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // Make an HTTP GET request to fetch data from the backend
+    axios.get('/api/posts')
+      .then((response) => {
+        // Update the state with the received data
+        setPosts(response.data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
     <Router>
       <div className="App">

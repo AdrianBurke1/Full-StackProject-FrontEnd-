@@ -18,6 +18,7 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
         <Link to="/login">Log In</Link> {/* Add the Login link */}
+        <Link to="signup"> Sign Up</Link>
         {/* Add other navigation links */}
       </div>
       <div className="page-content"></div>
