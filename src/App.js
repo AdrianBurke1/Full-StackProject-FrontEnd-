@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Profile from './Components/Profile';
 import Login from './Components/Login'; // Import the Login component
+import TechSidebar from './Components/TechSidebar';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -26,6 +27,8 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+       <TechSidebar />
+
         <Routes> {/* Use Routes instead of Switch */}
           <Route path="/login" element={<Login />} /> {/* Use the "element" prop */}
           <Route path="/profile" element={<Profile />} /> {/* Use the "element" prop */}

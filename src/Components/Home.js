@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'; // Import your CSS file for styling
 import Post from './Post'; // Import the Post component
+import TechSidebar from "./TechSidebar"; // Adjust the path as needed
 
 function Home() {
     const [posts, setPosts] = React.useState([
@@ -30,11 +31,11 @@ function Home() {
           
           </nav>
         </div>
-        <div className="main-content">
-          {/* Display the newest post using the Post component */}
+        {/* <div className="main-content">
+        
           <Post post={newestPost} />
-          {/* Add any other content, user information, and other elements */}
-        </div>
+          
+        </div> */}
       </div>
     );
   }

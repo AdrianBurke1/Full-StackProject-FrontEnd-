@@ -1,12 +1,13 @@
 /* TechSidebar.css */
-
 .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100%; /* Ensure it takes the full height of its parent container */
+    text-align: center; /* Center text inside buttons */
   }
+  
   
   .button-column {
     display: flex;
@@ -43,26 +44,20 @@
   }
   
   .tech-dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
   }
   
+  
   .tech-dropdown {
+    /* Add your dropdown styling here */
     width: 100%;
     padding: 10px;
-    border: none;
-    background-color: #a98383;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold; /* Make the font bold */
-    font-size: 16px; /* Increase the font size */
+    font-size: 16px;
   }
   
   .tech-dropdown option {
-    background-color: #333;
-    color: #fff;
+    background-color: #222222;
+    color: #ffffff;
   }
 
   .sidebar {
@@ -73,5 +68,39 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-right: 1px solid #ccc; /* Add a border to the right */
   }
+
+  .sidebar-button {
+    /* Add your button styling here */
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Example divider styling */
+  }
   
   /* Rest of your CSS styles */
+
+  /* CSS */
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    gap: 10px; /* Add some space between buttons */
+  }
+  
+  .button-container button {
+    /* Add any styling you want for individual buttons here */
+    padding: 10px 20px; /* Adjust padding to control button size */
+    background-color: #24292e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
