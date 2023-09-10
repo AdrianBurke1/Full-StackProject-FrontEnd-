@@ -1,0 +1,94 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .post {
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #0366d6;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #004b8c;
+  }
+  
+  .comments {
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Style for code posts */
+  pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 10px;
+    white-space: pre-wrap;
+  }
+  
+  code {
+    font-size: 14px;
+    color: #000;
+  }
+  
+  /* Style for image posts */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Posts.css */
+
+/* Style for the code example */
+.code-text {
+    color: black;
+  }
+  
+  /* Add any additional styles for your posts and components here */
+  
+  

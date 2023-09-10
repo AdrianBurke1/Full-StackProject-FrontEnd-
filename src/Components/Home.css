@@ -41,31 +41,3 @@
 }
 
 /* Home.css */
-.home {
-    background-color: #222; /* Dark background color */
-    color: #fff; /* Light text color */
-    font-family: Arial, sans-serif;
-    height: 100vh; /* Ensure the background covers the full viewport height */
-    overflow: hidden; /* Hide any content overflowing the viewport */
-  
-    /* Animation styles */
-    background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
-                      linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
-                      linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
-                      linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
-                      url('/Users/adrianburke/Desktop/Full-StackProject-FrontEnd-/Blue Gradient Technology Zoom Virtual Background.png'); /* Add the background image URL here */
-    background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%, cover; /* Adjust the size and cover */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-attachment: fixed; /* Fixed background */
-  
-    animation: codingBackground 3s linear infinite;
-  
-    @keyframes codingBackground {
-      0% {
-        background-position: 0 0, 0 100%, 0 0, 100% 0;
-      }
-      100% {
-        background-position: 100% 0, 100% 100%, 0 0, 100% 100%;
-      }
-    }
-  }
