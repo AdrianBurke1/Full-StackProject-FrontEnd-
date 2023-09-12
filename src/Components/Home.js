@@ -1,10 +1,9 @@
 import React from 'react';
 import './Home.css'; // Import your CSS file for styling
 import Post from './Post'; // Import the Post component
-import TechSidebar from './TechSidebar'; // Import the TechSidebar component
 
 function Home() {
-  const [posts, setPosts] = React.useState([
+  const [posts] = React.useState([
     {
       id: 1,
       type: 'code',
@@ -21,8 +20,6 @@ function Home() {
     },
     // Add more example posts here
   ]);
-
-  const newestPost = posts[posts.length - 1]; // Get the newest post
 
   return (
     <div className="home">

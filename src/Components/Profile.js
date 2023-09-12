@@ -6,7 +6,6 @@ function Profile() {
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState('');
   const [imageURL, setImageURL] = useState(''); // State to store the image URL
-  const [imageFile, setImageFile] = useState(null); // State to store the selected image file
   const [comment, setComment] = useState(''); // State to store the comment text
 
   // Function to handle posting a new image or project
@@ -18,7 +17,6 @@ function Profile() {
       setPosts(updatedPosts);
       setNewPost(''); // Clear the new post input
       setImageURL(''); // Clear the image URL input
-      setImageFile(null); // Clear the image file input
     }
   };
 
@@ -41,8 +39,6 @@ function Profile() {
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      // Set the selected image file
-      setImageFile(file);
       // Read the image as a data URL and set it as the image URL
       const reader = new FileReader();
       reader.onload = (event) => {
@@ -61,8 +57,6 @@ function Profile() {
     e.preventDefault();
     const droppedFile = e.dataTransfer.files[0];
     if (droppedFile && (droppedFile.type === 'image/jpeg' || droppedFile.type === 'image/png')) {
-      // Set the selected image file
-      setImageFile(droppedFile);
       // Read the image as a data URL and set it as the image URL
       const reader = new FileReader();
       reader.onload = (event) => {
