@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 import './Header.css'; // Import your CSS file
 
 // Import the image
-import headerImage from '/Users/adrianburke/Desktop/Full-StackProject-FrontEnd-/src/Tech_Space-removebg-preview.png';
+import TechSpaceImage from '../images/Tech_Space-removebg-preview.png';
+
+
+
 
 function Header() {
   return (
     <div className="header">
       <img
         className="header-image"
-        src={headerImage} // Use the imported image as the source
+        src={TechSpaceImage} // Use the imported image as the source
         alt="Tech Space Logo"
       />
       <div className="title"></div>
