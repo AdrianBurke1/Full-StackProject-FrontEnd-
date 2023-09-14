@@ -1,12 +1,11 @@
 /* Post.css */
-.post {
-    background-color: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.posts {
+  display: flex;
+  flex-wrap: wrap; /* Allow posts to wrap to the next line if needed */
+  justify-content: flex-start; /* Align posts to the left */
+  gap: 20px; /* Add some spacing between posts */
+}
+
   
   .post img {
     max-width: 100%;

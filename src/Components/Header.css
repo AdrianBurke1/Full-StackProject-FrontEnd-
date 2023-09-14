@@ -1,7 +1,7 @@
 /* Header.css */
 
 .header {
-    background-color: #24364d; /* Facebook's blue color */
+    background-color: #2b2d30; /* Facebook's blue color */
     color: #fff; /* White text color */
     padding: 10px;
     text-align: center;
@@ -10,6 +10,7 @@
     display: flex; /* Use flexbox to arrange header content */
     align-items: center; /* Vertically center header content */
     justify-content: space-between; /* Space the content evenly */
+    margin-bottom: 20;
 }
 
 .header .logo {

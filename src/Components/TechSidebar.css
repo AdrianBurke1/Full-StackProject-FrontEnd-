@@ -1,12 +1,13 @@
 /* TechSidebar.css */
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Ensure it takes the full height of its parent container */
-    text-align: center; /* Center text inside buttons */
-  }
+  width: 365px; /* Adjust the width as needed */
+  background-color: #f2f2f2; /* Background color for the sidebar */
+  padding: 40px; /* Add padding to the sidebar content */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
   
   
   .button-column {
@@ -40,7 +41,7 @@
   .divider {
     border: none;
     border-top: 1px solid #555;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   
   .tech-dropdown-container {
@@ -50,7 +51,7 @@
   
   .tech-dropdown {
     /* Add your dropdown styling here */
-    width: 100%;
+    width: 140%;
     padding: 10px;
     font-size: 16px;
   }
@@ -61,17 +62,22 @@
   }
 
   .sidebar {
+    position: fixed;
+    top: 20;
+    left: 0;
+    height: 100%; /* Make it cover the entire height of the page */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-right: 1px solid #ccc; /* Add a border to the right */
+    width: 380px; /* Set the width of the sidebar */
+    background-color: #afacac; /* Add a background color to the sidebar */
   }
-
   .sidebar-button {
     /* Add your button styling here */
-    background-color: #007bff; /* Example background color */
+    background-color: #030b14; /* Example background color */
     color: #fff; /* Example text color */
     padding: 10px 20px;
     border: none;

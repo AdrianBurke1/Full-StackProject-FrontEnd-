@@ -1,6 +1,6 @@
 /* Home.css */
 .home {
-    background-color: #f6f8fa;
+    background-color: #24292e;
     color: #333;
     font-family: Arial, sans-serif;
     padding: 0; /* Reset padding */
@@ -11,8 +11,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #24292e; /* GitHub's header background color */
-    color: #fff;
-    margin-bottom: 10px; /* Add margin to separate the header from content */
+    color: #fff; /* Add margin to separate the header from content */
 }
 
 .github-logo {
@@ -33,11 +32,12 @@
 
 .main-content {
     /* Add styles for your main content here */
-    padding: 1rem; /* Adjust padding for better spacing */
-    background-color: #fff;
+    flex-grow: 1; /* Allow main content to grow and fill available space */
+    padding-left: 20rem; /* Adjust padding for better spacing */
+    background-color: #292828;
     border: 1px solid #e1e4e8;
-    border-radius: 6px;
+    border-radius: 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  }
 
 /* Home.css */

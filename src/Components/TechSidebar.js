@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './TechSidebar.css'; // Import your CSS file
+import './TechSidebar.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 function TechSidebar() {
   const techWebsites = [
@@ -17,6 +18,16 @@ function TechSidebar() {
     const selectedValue = event.target.value;
     setSelectedUrl(selectedValue);
   };
+
+  // Calendar data and days of the week
+  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const calendarData = [
+    [1, 2, 3, 4, 5, 6, 7],
+    [8, 9, 10, 11, 12, 13, 14],
+    [15, 16, 17, 18, 19, 20, 21],
+    [22, 23, 24, 25, 26, 27, 28],
+    [29, 30, 31, null, null, null, null],
+  ];
 
   return (
     <div className="sidebar">
@@ -38,13 +49,34 @@ function TechSidebar() {
       <hr className="divider" />
       <div className="button-container">
         <button className="sidebar-button">Post</button>
-        <br />
         <button className="sidebar-button">Events</button>
-        <br />
         <button className="sidebar-button">Groups</button>
-        <br />
       </div>
-      <hr className="divider" />
+
+      {/* Calendar */}
+      <div className="calendar">
+        <h3 className="text-center mb-3"></h3>
+        <table className="table table-bordered">
+          <thead>
+            <tr>
+              {daysOfWeek.map((day, index) => (
+                <th key={index} scope="col">{day}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {calendarData.map((week, weekIndex) => (
+              <tr key={weekIndex}>
+                {week.map((day, dayIndex) => (
+                  <td key={dayIndex} className={`text-center ${day === null ? 'bg-light' : ''}`}>
+                    {day}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
