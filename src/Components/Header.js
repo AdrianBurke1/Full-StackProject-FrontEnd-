@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'; // Import your CSS file
+import Profile from "./Profile"
 
 // Import the image
 import TechSpaceImage from '../images/Tech_Space-removebg-preview.png';

@@ -7,7 +7,7 @@ function Home() {
     <div className="home">
       <div className="header">
         {/* Header component or logo */}
-        <h1>Welcome to Tech Space</h1>
+        <h1>Welcome To Tech Space</h1>
       </div>
       <TechSidebar />
       <div className="main-content">
